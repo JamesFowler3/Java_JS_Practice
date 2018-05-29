@@ -13,7 +13,25 @@ public class Practice {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+            int N = scanner.nextInt();
+            //Fizzbuzz Exercise
+            {
+            boolean fizzOrBuzz = false;
+            if (N % 3 == 0) {
+                System.out.print("Fizz");
+                fizzOrBuzz = true;
+            }
+            if (N % 5 == 0) {
+                System.out.print("Buzz");
+                fizzOrBuzz = true;
+            }
 
+            if (fizzOrBuzz) {
+                System.out.println();
+            } else {
+                System.out.println(String.valueOf(N));
+            }
+        }
 
 
 
