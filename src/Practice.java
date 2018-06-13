@@ -13,29 +13,42 @@ public class Practice {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-            int N = scanner.nextInt();
-            //Fizzbuzz Exercise
-            {
-            boolean fizzOrBuzz = false;
-            if (N % 3 == 0) {
-                System.out.print("Fizz");
-                fizzOrBuzz = true;
-            }
-            if (N % 5 == 0) {
-                System.out.print("Buzz");
-                fizzOrBuzz = true;
-            }
+        //Reversing a String
+        System.out.println("Reverse me");
+        String str = scanner.nextLine();
+        String reverse = "";
 
-            if (fizzOrBuzz) {
-                System.out.println();
-            } else {
-                System.out.println(String.valueOf(N));
-            }
+        for(int i = str.length() - 1; i >=0; i--)
+        {
+          reverse = reverse + str.charAt(i);
+        }
+            System.out.println("Reverse me");
+
+        System.out.println(reverse);
         }
 
 
 
 
+
+//            int N = scanner.nextInt();
+//            //Fizzbuzz Exercise
+//            {
+//            boolean fizzOrBuzz = false;
+//            if (N % 3 == 0) {
+//                System.out.print("Fizz");
+//                fizzOrBuzz = true;
+//            }
+//            if (N % 5 == 0) {
+//                System.out.print("Buzz");
+//                fizzOrBuzz = true;
+//            }
+//
+//            if (fizzOrBuzz) {
+//                System.out.println();
+//            } else {
+//                System.out.println(String.valueOf(N));
+//            }
 
 //            Scanner scanner =new Scanner(System.in);
 //            int N = scanner.nextInt();
@@ -56,5 +69,5 @@ public class Practice {
 //            }
 //            System.out.println("================================");
         }
-    }
+
 
