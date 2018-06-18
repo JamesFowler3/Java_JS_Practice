@@ -28,6 +28,27 @@ public class Practice {
         }
 
 
+        S
+
+        int N = scanner.nextInt();
+
+        boolean FizzorBuzz = false;
+
+        if(N % 3 == 0){
+            System.out.println("Fizz");
+            FizzorBuzz = true;
+    }
+        if(N % 5 == 0){
+            System.out.println("Buzz");
+            FizzorBuzz = true;
+    }
+    if(FizzorBuzz){
+            System.out.println();
+    }
+    else {
+            System.out.println(String.valueOf(N));
+    }
+
 
 
 
