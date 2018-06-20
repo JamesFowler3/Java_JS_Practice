@@ -1,3 +1,5 @@
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -13,43 +15,72 @@ public class Practice {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //Reversing a String
-        System.out.println("Reverse me");
-        String str = scanner.nextLine();
-        String reverse = "";
+        //How to vind how many vowels in a String
+        System.out.println("Enter String here");
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        char []chars=str.toCharArray();
 
-        for(int i = str.length() - 1; i >=0; i--)
-        {
-          reverse = reverse + str.charAt(i);
-        }
-            System.out.println("Reverse me");
+         int count = 0;
 
-        System.out.println(reverse);
-        }
+         for(char c:  chars) {
+             switch(c) {
 
-
-        S
-
-        int N = scanner.nextInt();
-
-        boolean FizzorBuzz = false;
-
-        if(N % 3 == 0){
-            System.out.println("Fizz");
-            FizzorBuzz = true;
-    }
-        if(N % 5 == 0){
-            System.out.println("Buzz");
-            FizzorBuzz = true;
-    }
-    if(FizzorBuzz){
-            System.out.println();
-    }
-    else {
-            System.out.println(String.valueOf(N));
-    }
+                 case 'a':
+                 case 'e':
+                 case 'i':
+                 case 'o':
+                 case 'u':
+                     count++;
+                     break;
+             }
+         }
+         System.out.println("The number of vowels in your string equals - " +count );
 
 
+
+
+
+
+
+
+
+
+
+//        //Reversing a String
+//        System.out.println("Reverse me");
+//        String str = scanner.nextLine();
+//        String reverse = "";
+//
+//        for(int i = str.length() - 1; i >=0; i--)
+//        {
+//          reverse = reverse + str.charAt(i);
+//        }
+//            System.out.println("Reverse me");
+//
+//        System.out.println(reverse);
+//        }
+//
+//
+//
+//        int N = scanner.nextInt();
+//
+//        boolean FizzorBuzz = false;
+//
+//        if(N % 3 == 0){
+//            System.out.println("Fizz");
+//            FizzorBuzz = true;
+//    }
+//        if(N % 5 == 0){
+//            System.out.println("Buzz");
+//            FizzorBuzz = true;
+//    }
+//    if(FizzorBuzz){
+//            System.out.println();
+//    }
+//    else {
+//            System.out.println(String.valueOf(N));
+//    }
 
 
 //            int N = scanner.nextInt();
