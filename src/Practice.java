@@ -15,27 +15,40 @@ public class Practice {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //How to vind how many vowels in a String
-        System.out.println("Enter String here");
-        Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
-        char []chars=str.toCharArray();
 
-         int count = 0;
 
-         for(char c:  chars) {
-             switch(c) {
+        //how to switch two variables values, with out adding a third variable
+        int x =50; int y = 20;
 
-                 case 'a':
-                 case 'e':
-                 case 'i':
-                 case 'o':
-                 case 'u':
-                     count++;
-                     break;
-             }
-         }
-         System.out.println("The number of vowels in your string equals - " +count );
+        x = x + y; // x is now 70
+        y = x - y;// y is now  50
+        x = x - y; //x is now 20
+
+
+
+
+    }
+        //How to find how many vowels in a String
+//        System.out.println("Enter String here");
+//        Scanner sc = new Scanner(System.in);
+//        String str = sc.nextLine();
+//        char []chars=str.toCharArray();
+//
+//         int count = 0;
+//
+//         for(char c:  chars) {
+//             switch(c) {
+//
+//                 case 'a':
+//                 case 'e':
+//                 case 'i':
+//                 case 'o':
+//                 case 'u':
+//                     count++;
+//                     break;
+//             }
+//         }
+//         System.out.println("The number of vowels in your string equals - " +count );
 
 
 
